@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="style.css" rel="stylesheet">
+	<script >
+	function mova(){
+	
+	document.getElementById('details').innerHTML=https://api.themoviedb.org/3/search/movie?api_key=cf325b0db7e946962912e814a513144c&language=en-US&query=john%20wick;
+}
+	</script>
+</head>
+<body>
+	<div class="header"><table><tr><td><a href="#">Home</a></td><td><a href="#">About</a></td><td><a href="#">Contact</a></td></tr></table></div>
+	<div class="cont">
+		<div class="searchbox">
+			<form onsubmit="mova()">
+			<center><input type="text" id="movie-name" class="moviename" placeholder="Enter movie name"></br></br>
+			<input type="submit" value="Search" id="searchbutton" ></center>
+			</form>
+		</div>
+	</div>
+	<p id="details">j</p>
+	
+</body>
+
+.searchbox{
+	position: relative;
+	top: 45%;
+}
+
+.searchbox .moviename{
+	height: 60px;
+	width: 600px;
+	padding-left: 43px;
+	background: #ebebeb;
+	border: 0;
+	border-radius: 200px;
+	font-size: 18px;
+}
+
+.searchbox #searchbutton{
+	font-size: 20px;
+	color: white;
+	width: 180px;
+	border: 0;
+	border-radius: 100px;
+	padding: 15px;
+	background: #0da984;
+}
